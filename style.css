@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #f4f4f4;
+    color: #000000;
+    margin: 40px;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 100px;
+    background: linear-gradient(135deg, rgb(0, 255, 187), green, rgb(255, 255, 16));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: #333333;
+    font-family: cursive;
+    transition: 0.3s ease;
+}
+h1:hover {
+    transform: scale(1.005) translateY(-5px);
+    text-shadow: 0 0 50px rgba(0, 255, 187, 0.2);
+    font-size: 105px;
+}
+.container {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.column{
+    background-color: rgb(43, 39, 39);
+    border-radius: 30px;
+    padding: 20px;
+    margin: 30px;
+    transition: 0.3s ease;
+}
+.column:hover {
+    transform: scale(1.005) translateY(-5px);
+    box-shadow: 0 0 50px rgba(0, 26, 255, 0.2);
+}
+.column h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+    margin-top: 0px;
+    font-size: 50px;
+    color: rgb(0, 200, 255);
+}
+.task-card{
+    background-color: #E9B44C;
+    color: rgb(84, 24, 98);
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s ease;
+}
+.task-card:hover {
+    transform: scale(1.005) translateY(-4px);
+    box-shadow: 0 0 20px rgba(255, 238, 238, 0.3);
+}
