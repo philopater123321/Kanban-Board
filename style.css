@@ -53,6 +53,12 @@ h1:hover {
     margin-top: 0px;
     font-size: 50px;
     color: rgb(0, 200, 255);
+    transition: 0.3s ease;
+}
+.column h2:hover {
+    transform: scale(1.005) translateY(-3px);
+    text-shadow: 0 0 30px rgba(0, 200, 255, 0.3);
+    color: rgb(0, 255, 187);
 }
 .task-card{
     position: relative;
@@ -114,4 +120,9 @@ h1:hover {
 .delete-btn:hover {
     color: red;
     transform: scale(1.005) translateY(-2px);
+}
+
+.task-card.dragging {
+    opacity: 0.4;
+    border: 2px dashed rgb(0, 255, 187);
 }
