@@ -20,19 +20,36 @@ existingTasks.forEach(task => {
     makeTaskDraggable(task);
 });
 addBtn.addEventListener('click', function() {
+    const newTaskText = taskInput.value.trim();
 
-    if (taskInput.value.trim() !== '') {
-        const newTask = document.createElement('div');
-        newTask.classList.add('task-card');
-        newTask.setAttribute('draggable', 'true');
-        
-        newTask.innerHTML = `${taskInput.value} <span class="delete-btn">✖</span>`;
-        makeTaskDraggable(newTask);
-        todoColumn.appendChild(newTask);
-        taskInput.value= '';
+    if (newTaskText !== '') {
+        let isDuplicate = false;
+
+        const allCurrentTasks = document.querySelectorAll('.task-card');
+        allCurrentTasks.forEach(task => {
+            const existingText = task.innerText.replace('✖', '').trim();
+            if (existingText.toLowerCase() === newTaskText.toLowerCase()) {
+                isDuplicate = true;
+            }
+        });
+
+        if (isDuplicate) {
+            alert('This task already exists. Please enter a different tasks.');
+        } else {
+            const newTask = document.createElement('div');
+            newTask.classList.add('task-card');
+            newTask.setAttribute('draggable', 'true');
+
+            newTask.innerHTML = `${newTaskText} <span class="delete-btn">✖</span>`;
+            makeTaskDraggable(newTask);
+            todoColumn.appendChild(newTask);
+            taskInput.value= '';
+        } 
     } else{
         alert('Please enter a task before adding...');
     }
+
+
 });
 
 container.addEventListener('click', function(event) {
