@@ -54,6 +54,7 @@ h1:hover {
     color: rgb(0, 200, 255);
 }
 .task-card{
+    position: relative;
     background-color: #E9B44C;
     color: rgb(84, 24, 98);
     font-size: 30px;
@@ -98,4 +99,18 @@ h1:hover {
 .add-task-button:hover {
     transform: scale(1.005) translateY(-4px);
     box-shadow: 0 0 40px rgba(0, 255, 187, 0.3);
+}
+
+.delete-btn{
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 30px;
+    color: rgb(84, 24, 98);
+    transition: 0.3s ease;
+}
+
+.delete-btn:hover {
+    color: red;
+    transform: scale(1.005) translateY(-2px);
 }
