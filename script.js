@@ -28,7 +28,7 @@ addBtn.addEventListener('click', function() {
         const allCurrentTasks = document.querySelectorAll('.task-card');
         allCurrentTasks.forEach(task => {
             const existingText = task.innerText.replace('✖', '').trim();
-            if (existingText.toLowerCase() === newTaskText.toLowerCase()) {
+            if (existingText.toLowerCase() === newTaskText.toLowerCase) {
                 isDuplicate = true;
             }
         });

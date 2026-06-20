@@ -126,3 +126,25 @@ h1:hover {
     opacity: 0.4;
     border: 2px dashed rgb(0, 255, 187);
 }
+
+.change-mode {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    margin: 0 auto 20px auto;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 25px;
+    border:none;
+    background: rgb(118, 49, 134);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.change-mode:hover {
+    transform: scale(1.005) translateY(-4px);
+    background: rgb(84, 24, 98);
+    box-shadow: 0 0 40px rgba(84, 24, 98, 0.3);
+}
