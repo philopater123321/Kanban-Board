@@ -5,7 +5,7 @@
     font-family: Arial, sans-serif;
 }
 body {
-    background-color: #f4f4f4;
+    background: linear-gradient(135deg, rgb(191, 255, 238), #9ffff7, rgb(255, 255, 181));
     color: #000000;
     margin: 40px;
     padding: 20px;
@@ -93,8 +93,8 @@ h1:hover {
 }
 .add-task-button {
     font-size: 30px;
-    background: linear-gradient(135deg, rgb(0, 255, 187), #3cffef, rgb(255, 255, 16));
-    color: #333333;
+    background: linear-gradient(135deg, rgb(30, 135, 107), #1d6d66, rgb(126, 126, 25));
+    color: #ffffff;
     border: none;
     font-weight: bold;
     padding: 10px 20px;
@@ -147,4 +147,13 @@ h1:hover {
     transform: scale(1.005) translateY(-4px);
     background: rgb(84, 24, 98);
     box-shadow: 0 0 40px rgba(84, 24, 98, 0.3);
+}
+
+body.dark-mode {
+    background: linear-gradient(135deg, #5d1464, #1f3576, #06414b);
+    color: #ffffff;
+}
+
+body.dark-mode .column {
+    background-color: #2a2a2a;
 }

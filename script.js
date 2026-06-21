@@ -3,6 +3,7 @@ const addBtn = document.getElementById('add-task-button');
 const todoColumn = document.getElementById('todo');
 const container = document.querySelector('.container');
 const columns = document.querySelectorAll('.column');
+const changeModeBtn = document.getElementById('change-mode');
 
 function makeTaskDraggable(task) {
     task.addEventListener('dragstart', () => {
@@ -28,7 +29,7 @@ addBtn.addEventListener('click', function() {
         const allCurrentTasks = document.querySelectorAll('.task-card');
         allCurrentTasks.forEach(task => {
             const existingText = task.innerText.replace('✖', '').trim();
-            if (existingText.toLowerCase() === newTaskText.toLowerCase) {
+            if (existingText.toLowerCase() === newTaskText.toLowerCase()) {
                 isDuplicate = true;
             }
         });
@@ -87,3 +88,12 @@ function getDragAfterElement(column, y) {
         }
     }, { offset: Number.NEGATIVE_INFINITY }).element;
 }
+
+changeModeBtn.addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+    if (document.body.classList.contains('dark-mode')) {
+        changeModeBtn.textContent = '☀️ Light Mode';
+    } else {
+        changeModeBtn.textContent = '🌙 Dark Mode';
+    }
+})
