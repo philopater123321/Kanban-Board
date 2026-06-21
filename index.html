@@ -11,21 +11,27 @@
     <button id="change-mode" class="change-mode">🌙 Dark Mode</button>
     <div class="add-task">
         <input type="text" id="task-input" placeholder="Enter a new task...">
+        <select id="priority-input" class="priority-select">
+            <option value="low">Low Priority</option>
+            <option value="medium">Medium Priority</option>
+            <option value="high">High Priority</option>
+        </select>
         <button class="add-task-button" id="add-task-button">Add Task</button>
     </div>
     <div class="container">
         <div class="column" id="todo">
-            <h2>To Do</h2>
+            <h2>To Do <span class="task-count">0</span></h2>
             <div class="task-card" draggable="true">Task 1 <span class="delete-btn">✖</span></div>
             <div class="task-card" draggable="true">Task 2 <span class="delete-btn">✖</span></div>
         </div>
         <div class="column" id="in-progress">
-            <h2>In Progress</h2>
+            <h2>In Progress <span class="task-count">0</span></h2>
             <div class="task-card" draggable="true">Task 3 <span class="delete-btn">✖</span></div>
         </div>
         <div class="column" id="done">
-            <h2>Done</h2>
+            <h2>Done <span class="task-count">0</span></h2>
             <div class="task-card" draggable="true">Task 4 <span class="delete-btn">✖</span></div>
+            <button class="clear-done-btn" id="clear-done-btn">Clear All</button>
         </div>
     </div>
     <script src="script.js"></script>
