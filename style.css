@@ -63,12 +63,12 @@ h1:hover {
 .task-card{
     position: relative;
     background-color: #E9B44C;
-    color: rgb(84, 24, 98);
+    color: white;
     font-size: 30px;
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 20px;
-    padding: 10px;
+    padding: 15px 45px 15px 15px;
     font-weight: bold;
     text-align: center;
     transition: 0.3s ease;
@@ -110,10 +110,10 @@ h1:hover {
 
 .delete-btn{
     position: absolute;
-    top: 5px;
+    top: 10px;
     right: 15px;
     font-size: 30px;
-    color: rgb(84, 24, 98);
+    color: white;
     transition: 0.3s ease;
 }
 
@@ -121,7 +121,10 @@ h1:hover {
     color: red;
     transform: scale(1.005) translateY(-2px);
 }
-
+.task-card.priority-high .delete-btn:hover, 
+.task-card.priority-medium .delete-btn:hover{
+    color: black;
+}
 .task-card.dragging {
     opacity: 0.4;
     border: 2px dashed rgb(0, 255, 187);
@@ -166,9 +169,9 @@ body.dark-mode .column {
     border-radius: 15px;
 }
 
-.task-card.priority-low {border-left: 10px solid #2ecc71;}
-.task-card.priority-medium {border-left: 10px solid #e67e22;}
-.task-card.priority-high {border-left: 10px solid #ff1900;}
+.task-card.priority-low {background-color: #2ecc71;}
+.task-card.priority-medium {background-color: #e67e22;}
+.task-card.priority-high {background-color: #ff1900;}
 
 .edit-input {
     width: 100%;
