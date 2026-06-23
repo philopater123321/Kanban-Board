@@ -21,7 +21,9 @@ This program is really good, and it is not like other to do list apps, as it is 
 - **Dark Mode:** You can open dark mode in your program if you preffer it.
   <img width="1917" height="888" alt="image" src="https://github.com/user-attachments/assets/c4542f35-28e1-42ca-8a69-a31d673c67fa" />
 
+## Why did I make this project?
+I made this program for the productive people to let them have more features not just like a normal to do list app, while this app is so featured and also is good, and you can put your tasks in different stats, actually I will use this project in my daily life and I am proud of building it.
 
-
-
+### Important note:
+I used AI in writing the JavaScript code because I am still not experienced enough to write it all alone, but I actually got good experience by doing this project and I think I won't use AI in similar projects.
 
