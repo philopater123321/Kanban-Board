@@ -17,7 +17,7 @@ This program is really good, and it is not like other to do list apps, as it is 
   <img width="1917" height="908" alt="image" src="https://github.com/user-attachments/assets/ad8564c7-e484-448f-89b5-d1b25a2e7ec5" />
 - **Priority colors:** Each priority level gives the tasks a color like, the low level priority has green, the medium has orange, and the high has red color.
 <img width="1917" height="911" alt="image" src="https://github.com/user-attachments/assets/7553b91d-8e5f-45b3-8ec5-5d7a83f85b1a" />
-- **the delete Button (X):** When you press X you can delete that task
+- **the delete Button (X)**: When you press X you can delete that task
 - **Dark Mode:** You can open dark mode in your program if you preffer it.
   <img width="1917" height="888" alt="image" src="https://github.com/user-attachments/assets/c4542f35-28e1-42ca-8a69-a31d673c67fa" />
 
