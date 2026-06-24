@@ -25,5 +25,5 @@ This program is really good, and it is not like other to do list apps, as it is 
 I made this program for the productive people to let them have more features not just like a normal to do list app, while this app is so featured and also is good, and you can put your tasks in different stats, actually I will use this project in my daily life and I am proud of building it.
 
 ### Important note:
-I used AI in writing the JavaScript code because I am still not experienced enough to write it all alone, but I actually got good experience by doing this project and I think I won't use AI in similar projects.
+I used AI in writing the JavaScript code because I am still not experienced enough to write it all alone, but I actually got good experience by doing this project and I think I won't use AI in similar projects. I didn't copy and paste the code from AI, I only used it as an assistant to help me while I am learning.
 
